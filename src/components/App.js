@@ -1,12 +1,20 @@
+import { Tooltip } from "../tooltip"
 
-import React from "react";
-import './../styles/App.css';
 
 const App = () => {
   return (
+    <>
     <div>
-        {/* Do not remove the main div */}
+        <Tooltip text={"This is s tooltip"}>
+        <p>Hover Over Me</p>
+        </Tooltip>
     </div>
+     <div>
+     <Tooltip text={"This is s tooltip"}>
+     <p>Hover Over Me to see another tooltip</p>
+     </Tooltip>
+ </div>
+ </>
   )
 }
 
